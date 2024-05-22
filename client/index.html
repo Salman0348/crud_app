@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.svg" />
+    <title>Full Stack App</title>
+  </head>
+  <body>
+    <main>
+      <div id="add_name">
+        <input type="text" id="name" placeholder="Enter Name" />
+        <button id="add-name-btn">Add Name</button>
+      </div>
+      <div id="search">
+        <input type="text" placeholder="Search by Name" id="search-input" />
+        <button id="search-btn">Search</button>
+      </div>
+      <table id="table">
+        <thead>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Date added</th>
+          <th>Delete</th>
+          <th>Edit</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <section hidden id="update-section">
+        <label for="update-name"
+          >Name <span id="old-name-update"></span>:</label
+        >
+        <input type="text" id="update-name" placeholder="New Name" />
+        <button id="update-btn">update</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

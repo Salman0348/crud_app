@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+
+}
+:root{
+    --greenish-color:#32bd32;
+}
+body{
+    height: 100vh;
+    background-color:#290e42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    /* height: 100%; */
+    /* width: 600px; */
+    padding: 3rem 2rem;
+    border-radius: 15px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(245 244 247);
+    box-shadow:  0 3px 15px rgba(0,0,0,.3);
+}
+input,button{
+    height: 30px;
+}
+table,th,td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+#add_name, #search{
+    background-color: transparent;
+}
+#add_name input,#search-input,#update-name{
+    padding: 0px;
+    padding-left: 10px;
+    height: 35px;
+    font-size: 1rem;
+    border-radius: 15px;
+    border: 1.5px solid #290e42;
+}
+#add-name-btn,#search-btn,#update-btn{
+    border-radius: 15px;
+    height: 35px;
+    border: 1.5px solid #290e42;
+    background-color: var(--greenish-color);
+    color: white;
+    font-weight: 600;
+}
+#add-name-btn:hover{
+    background-color: #33d033;
+    border: 1.5px solid  var(--greenish-color);
+    cursor: pointer;
+}
+#search-btn:hover{
+    background-color: #33d033;
+    border: 1.5px solid  var(--greenish-color);
+    cursor: pointer;
+}
+#update-btn:hover{
+    background-color: #33d033;
+    border: 1.5px solid  var(--greenish-color);
+    cursor: pointer;
+}
+.delete_row_btn{
+    background-color:#fb4b4b;
+    cursor: pointer;
+}
+.delete_row_btn:hover{
+    background-color:#e53f3f;
+}
+.edit_row_btn{
+    background-color:  var(--greenish-color);
+    cursor: pointer;
+}
+.edit_row_btn:hover{
+    background-color:  #33d033;
+    
+}
